@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.*
+
+# Saved browser states (contains cookies/tokens)
+.cypress-mcp/
+
+# Test output
+coverage/
+cypress/screenshots/
+cypress/videos/
+cypress/downloads/
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Pack output
+*.tgz

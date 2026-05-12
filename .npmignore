@@ -1,0 +1,15 @@
+# Source (dist is what gets published)
+src/
+tests/
+tsconfig.json
+
+# Dev files
+.gitignore
+.github/
+.vscode/
+.idea/
+
+# Test output
+coverage/
+cypress/
+*.tgz
