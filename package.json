@@ -1,6 +1,6 @@
 {
   "name": "@tms-cymcp/cypress-mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "MCP server plugin for Cypress — let AI agents control your browser for testing",
   "keywords": ["cypress", "mcp", "model-context-protocol", "ai", "testing", "automation", "browser"],
   "license": "MIT",
@@ -21,12 +21,13 @@
   "exports": {
     ".": { "import": "./dist/index.js", "require": "./dist/index.js", "types": "./dist/index.d.ts" },
     "./plugin": { "import": "./dist/plugin.js", "require": "./dist/plugin.js", "types": "./dist/plugin.d.ts" },
-    "./support": { "import": "./dist/support.js", "require": "./dist/support.js", "types": "./dist/support.d.ts" }
+    "./support": { "import": "./dist/support.js", "require": "./dist/support.js", "types": "./dist/support.d.ts" },
+    "./package.json": "./package.json"
   },
   "bin": { "cypress-mcp": "./dist/cli.js" },
   "files": ["dist/", "README.md", "LICENSE", "SECURITY.md"],
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && tsc -p tsconfig.cypress.json",
     "dev": "tsc --watch",
     "test": "echo \"Tests placeholder\"",
     "lint": "tsc --noEmit",
