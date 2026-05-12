@@ -1,5 +1,5 @@
 {
-  "name": "cypress-mcp",
+  "name": "@tms-cymcp/cypress-mcp",
   "version": "0.1.0",
   "description": "MCP server plugin for Cypress — let AI agents control your browser for testing",
   "keywords": ["cypress", "mcp", "model-context-protocol", "ai", "testing", "automation", "browser"],
